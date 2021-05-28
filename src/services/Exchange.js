@@ -4,10 +4,15 @@ export default new class ExchangeModel {
   }
 
   returnSymbolCoin(coin) {
-    return coin == 'USD' ? '$'
-      :
-      coin == 'BRL' ? 'R$'
-      :
-      coin == 'EU'? '€' : undefined; 
+    switch(coin){
+      case('USD'):
+        return '$';
+      case('BRL'):
+        return 'R$';
+      case('EU'):
+        return '€';
+      default:
+        return undefined;
+    }
   }
 }
