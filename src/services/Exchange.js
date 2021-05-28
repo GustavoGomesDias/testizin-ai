@@ -5,9 +5,9 @@ export default new class ExchangeModel {
 
   returnSymbolCoin(coin) {
     return coin == 'USD' ? '$'
-    :
-    coin == 'BRL' ? 'R$'
-    :
-    '€'; 
+      :
+      coin == 'BRL' ? 'R$'
+      :
+      coin == 'EU'? '€' : undefined; 
   }
 }

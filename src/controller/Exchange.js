@@ -2,9 +2,9 @@ import Exchange from "../services/Exchange.js";
 
 export default new class ExchangeController {
   convert(req, res) {
-    const { amont, _, to, rate } = req.params;
-
-    const resultConvert = Exchange.convert(amont, rate);
+    const { amount, _, to, rate } = req.params;
+   
+    const resultConvert = Exchange.convert(amount, rate);
     const symbolCoin = Exchange.returnSymbolCoin(to);
 
     const obj = {
@@ -12,6 +12,9 @@ export default new class ExchangeController {
       simboloMoeda: symbolCoin
     }
 
-    return res.json(obj).status(200);
+    return symbolCoin == undefined ? 
+      res.json({ error: 'Não consgeuimos detectar a moeda de conversão' }).status(400)
+      :
+      res.json(obj).status(200);
   }
 }
