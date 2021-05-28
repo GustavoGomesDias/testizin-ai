@@ -2,7 +2,8 @@
   "name": "testizin-ai",
   "version": "1.0.0",
   "description": "É um teste para backend, mas como a stack é diferente, vou só usar ele como base pra gerar exp 😎.",
-  "main": "index.js",
+  "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
