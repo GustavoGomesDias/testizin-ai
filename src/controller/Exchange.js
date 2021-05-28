@@ -1,6 +1,6 @@
 import Exchange from "../services/Exchange.js";
 
-export default class ExchangeController {
+export default new class ExchangeController {
   convert(req, res) {
     const { amont, _, to, rate } = req.params;
 

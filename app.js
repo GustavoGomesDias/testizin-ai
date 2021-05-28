@@ -1,4 +1,5 @@
 import express from 'express';
+import Exchange from './src/routes/Exchange.js';
 
 class App {
   constructor() {
@@ -7,7 +8,7 @@ class App {
   }
 
   routes() {
-    console.log("Routes");
+    this.app.use('/', Exchange);
   }
 }
 
