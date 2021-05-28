@@ -1,6 +1,6 @@
-export default class Exchange {
+export default new class ExchangeModel {
   convert(amount, rate) {
-    return amount * rate;
+    return parseFloat(amount) * parseFloat(rate);
   }
 
   returnSymbolCoin(coin) {
