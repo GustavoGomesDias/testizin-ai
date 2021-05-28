@@ -1,0 +1,20 @@
+{
+  "name": "testizin-ai",
+  "version": "1.0.0",
+  "description": "É um teste para backend, mas como a stack é diferente, vou só usar ele como base pra gerar exp 😎.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoGomesDias/testizin-ai.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoGomesDias/testizin-ai/issues"
+  },
+  "homepage": "https://github.com/GustavoGomesDias/testizin-ai#readme"
+}
